@@ -16,6 +16,9 @@ function buildMachinePattern() {
     let currFirstRow = 'a';
     console.log('test');
 
+    let firstDirection = document.getElementById('start-direction-left').checked ? '←' : '→';
+    let secondDirection = firstDirection === '←' ? '→' : '←';
+
     generatedPatternDiv.innerHTML = ``;
 
     const table = document.createElement('table');
@@ -34,10 +37,10 @@ function buildMachinePattern() {
         }
         const firstColor = document.createElement('td');
         firstColor.classList = 'cell';
-        firstColor.innerText = `${currFirstRow.toLocaleUpperCase()}←`;
+        firstColor.innerText = `${currFirstRow.toLocaleUpperCase()}${firstDirection}`;
         const secondColor = document.createElement('td');
         secondColor.classList = 'cell';
-        secondColor.innerText = `${(currFirstRow==='a' ? 'b' : 'a').toLocaleUpperCase()}→`;
+        secondColor.innerText = `${(currFirstRow==='a' ? 'b' : 'a').toLocaleUpperCase()}${secondDirection}`;
         firstRow.appendChild(firstColor);
         secondRow.appendChild(secondColor);
         table.prepend(firstRow);
