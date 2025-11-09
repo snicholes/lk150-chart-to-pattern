@@ -1,0 +1,40 @@
+body {
+    background-color: #ffefd0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span.cell {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.cell {
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+}
+
+.a {
+    background-color: #7080d0;
+}
+
+.a:hover {
+    background-color: #80a0f0;
+}
+
+.b {
+    background-color: #c0dfdf;
+}
+
+.b:hover {
+    background-color: #90afc0;
+}
+
+.posB {
+    background-color: #f0f0ff;
+}
+
+.posD {
+    background-color: #404060;
+}
